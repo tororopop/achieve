@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   root 'top#index'
 
-  if Rails.env.development?
+  if Rails.env.development? #本番環境(heroku)では使わない。開発環境(ローカル)でのみ使う
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
