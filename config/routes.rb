@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :poems, only: [:index, :show]
+
   root 'top#index'
 
   if Rails.env.development? #本番環境(heroku)では使わない。開発環境(ローカル)でのみ使う
