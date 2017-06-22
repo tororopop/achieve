@@ -41,6 +41,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # gem 'dotenv-rails'  #SNS•APIの実装時、開発環境は生成しない方針につき、コメントアウト
 end
 
 gem 'twitter-bootstrap-rails'
@@ -64,3 +66,7 @@ gem 'rails_admin'
 gem 'cancan'
 
 gem 'activeresource'
+
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
