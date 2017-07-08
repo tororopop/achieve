@@ -4,21 +4,10 @@
     <br>
     <%= @user.email %>
     <%= render 'follow_form', user: @user %>
-    <br>
-
-    <div id="followed_users_area">
-      <%= render partial: 'users/followed_users', locals: { user: @user } %>
-    </div>
-
-    <br>
-    <br>
-
-    ・フォローされてる人<br>
-    <% @user.followers.each do |user| %>
-    <%= profile_img_thumb(user) %>
-      <%= user.email %>
-      <br>
-    <% end %>
-    <br>
     <%= link_to '戻る', users_path %>
+    <br>
+      <%= render partial: 'users/followed_users', locals: { user: @user } %>
+    <br>
+    <br>
+      <%= render partial: 'users/followers', locals: { user: @user } %>
 </div>
