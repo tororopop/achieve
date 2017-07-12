@@ -59,6 +59,7 @@ group :development do
   gem 'letter_opener_web'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'dotenv-rails'
 end
 
 gem 'rails_admin'
@@ -74,3 +75,5 @@ gem 'omniauth-facebook'
 #image uploader
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'pusher'
