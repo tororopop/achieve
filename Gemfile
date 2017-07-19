@@ -59,6 +59,7 @@ group :development do
   gem 'letter_opener_web'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'dotenv-rails'
 end
 
 gem 'rails_admin'
@@ -78,7 +79,7 @@ gem 'mini_magick'
 gem 'pusher'
 
   gem 'fog'
-  gem 'dotenv-rails'
+
   gem 'unicorn'
 
   gem 'therubyracer', platforms: :ruby
