@@ -35,5 +35,11 @@ module Achieve
         request_specs: false
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
+
+    config.generators do |g|
+      g.assets     false
+      g.helper     false
+    end
+
   end
 end
