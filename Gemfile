@@ -69,6 +69,7 @@ group :development do
   gem 'letter_opener_web'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'web-console', '~> 2.0'
 end
 
@@ -88,12 +89,12 @@ gem 'mini_magick'
 
 gem 'pusher'
 
-  gem 'fog'
+gem 'fog'
 
-  gem 'dotenv-rails'
-  gem 'unicorn'
+gem 'dotenv-rails'
+gem 'unicorn'
 
-  gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 group :test do
   gem "capybara"
